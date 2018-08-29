@@ -50,6 +50,7 @@ static NSString *const reuserId = @"reuserId";
      selectBlock: 点击cell的回掉
      reloadData: 删除数据、添加数据后的回掉
      */
+    
     self.dataSource = [[LMDataSource alloc] initWithIdentifier:reuserId configureBlock:^(MVPTableViewCell *cell, Model *model, NSIndexPath *indexPath) {
 
         cell.nameLabel.text = model.name;
